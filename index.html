@@ -1,0 +1,425 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta property="og:title" content="foodpanda 年訂閱限時599優惠">
+<meta property="og:description" content="2026/11/03–2026/11/10 年訂閱限時599優惠。">
+<meta property="og:image" content="{{ site.github.url }}/valorant-event.png">
+<meta property="og:url" content="{{ site.github.url }}/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ site.github.url }}/valorant-event.png">
+
+<script>
+/* =========================================================
+   ★★★★★ 所有要修改的內容都在這裡 ★★★★★
+   之後你只需要改這一區，不用動下面的程式。
+   ========================================================= */
+
+const CONFIG = {
+  /* 頁籤標題 */
+  pageTitle: "foodpanda 年訂閱599優惠",
+
+  /* 主圖：圖片和 html 放同一個資料夾；圖片檔名不變 */
+  heroImage: "valorant-event.png",
+  heroAlt: "foodpanda 年訂閱",
+
+  /* 上方文字 */
+  eyebrow: "panda pro · 限時會員回饋",
+  title: "年訂閱599優惠",
+  subtitle: "開通 12 個月年訂閱 51元帶走。",
+
+  /* 資訊卡 */
+  rewardLabel: "活動主題",
+  rewardText: "12 個月年訂閱限時599優惠",
+
+  timeLabel: "活動時間",
+  timeText: "2026/11/11 ～ 2026/11/12",
+
+  /* 領取／查看區塊 */
+  claimTag: "PANDAPRO · 限時回饋",
+  claimTitleLine1: "年訂閱59元",
+  claimTitleLine2: "外送優惠再升級，聯絡客服或者專屬訂閱代碼",
+  claimDesc: "專屬優惠、免運福利與超值折扣。",
+  claimButtonText: "前往聯絡客服獲取",
+  claimSafeText: "官方活動 ",
+
+  /* ★ 可在這裡修改連結；預設為 foodpanda 官方網站 */
+  lineLink: "https://lin.ee/sYUu7oG",
+
+  /* 底部小字 */
+  footerText: "※ 本頁為官方foodpanda 活動公告優惠承諾。"
+};
+</script>
+
+<title></title>
+
+<style>
+/* ============================================================
+   foodpanda-inspired 粉白活動主題
+   保留原有 HTML 區塊、ID、文字對應方式與 16:9 圖片呈現
+   ============================================================ */
+:root {
+  --panda-pink: #e91578;
+  --panda-dark: #aa0752;
+  --panda-soft: #fff0f7;
+  --panda-lilac: #f5e8ff;
+  --ink: #352437;
+  --muted: #786775;
+  --border: #f4d6e7;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: var(--ink);
+  background: #fff9fc;
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: "";
+  position: fixed;
+  z-index: 0;
+  pointer-events: none;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 5% 5%, rgba(255, 95, 166, .21), transparent 37%),
+    radial-gradient(ellipse at 98% 24%, rgba(220, 156, 255, .17), transparent 34%),
+    radial-gradient(ellipse at 15% 90%, rgba(255, 209, 225, .30), transparent 36%),
+    linear-gradient(150deg, #fff6fa 0%, #fffafd 49%, #fff1f8 100%);
+}
+/* 淡色點點與漸層營造外送活動的輕快背景 */
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: .48;
+  background-image: radial-gradient(rgba(234, 73, 137, .15) 1.4px, transparent 1.5px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(to bottom, #000, transparent 84%);
+}
+.glow {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(65px);
+  pointer-events: none;
+  z-index: 0;
+}
+.glow.one { width: 310px; height: 310px; right: -115px; top: 40px; background: rgba(255, 88, 156, .18); }
+.glow.two { width: 280px; height: 280px; left: -130px; bottom: 40px; background: rgba(215, 157, 253, .17); }
+.page {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 760px);
+  margin: 0 auto;
+  padding: 26px 18px 48px;
+}
+.hero {
+  overflow: hidden;
+  border-radius: 26px;
+  background: linear-gradient(135deg, #ffdfef, #fff5fa);
+  border: 5px solid rgba(255, 255, 255, .92);
+  box-shadow: 0 16px 44px rgba(194, 43, 116, .18), 0 0 0 1px #f8c4df;
+}
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+.intro {
+  margin-top: 26px;
+  text-align: center;
+  padding: 0 10px;
+}
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 9px 16px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #ffc5e0;
+  color: #d50c67;
+  box-shadow: 0 5px 17px rgba(224, 47, 121, .08);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: .08em;
+}
+.eyebrow::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f33f95;
+  box-shadow: 0 0 0 4px #ffe3f0;
+}
+h1 {
+  margin: 17px 0 11px;
+  font-size: clamp(34px, 6vw, 48px);
+  line-height: 1.15;
+  font-weight: 950;
+  letter-spacing: -.045em;
+  color: var(--panda-pink);
+  text-shadow: 0 3px 0 rgba(255, 255, 255, .95);
+}
+.subtitle {
+  max-width: 630px;
+  margin: 0 auto;
+  color: #685969;
+  font-size: 14px;
+  line-height: 1.85;
+}
+.info {
+  margin-top: 25px;
+  padding: 17px;
+  border-radius: 23px;
+  background: rgba(255, 255, 255, .94);
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 35px rgba(194, 67, 128, .10);
+}
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 15px 16px;
+  border-radius: 16px;
+  background: linear-gradient(108deg, #fff0f6 0%, #fff7fb 100%);
+}
+.row + .row { margin-top: 11px; }
+.label {
+  flex: 0 0 83px;
+  color: #cf0b66;
+  font-size: 13px;
+  font-weight: 900;
+}
+.value {
+  flex: 1;
+  color: #4a3343;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 680;
+  word-break: break-word;
+}
+.claim-panel {
+  position: relative;
+  overflow: hidden;
+  margin-top: 22px;
+  padding: 30px 26px 26px;
+  border-radius: 27px;
+  background:
+    radial-gradient(circle at 104% -4%, rgba(255, 170, 208, .47), transparent 41%),
+    radial-gradient(circle at 0 100%, rgba(234, 203, 255, .42), transparent 43%),
+    linear-gradient(145deg, #ffffff, #fff0f7);
+  border: 1px solid #f7cadf;
+  box-shadow: 0 17px 45px rgba(203, 57, 127, .13);
+}
+.claim-panel::after {
+  content: "✦";
+  position: absolute;
+  right: 25px;
+  top: 18px;
+  font-size: 31px;
+  color: rgba(232, 21, 120, .21);
+  pointer-events: none;
+}
+.claim-tag {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: #ffe3f0;
+  color: #c30b5d;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .07em;
+}
+.claim-title {
+  margin-top: 14px;
+  font-weight: 950;
+  line-height: 1.17;
+  letter-spacing: -.035em;
+}
+.claim-title .line1 {
+  display: block;
+  font-size: clamp(34px, 6vw, 44px);
+  color: #e60d74;
+}
+.claim-title .line2 {
+  display: block;
+  margin-top: 6px;
+  font-size: clamp(28px, 5.2vw, 39px);
+  color: #512a48;
+}
+.claim-desc {
+  margin-top: 15px;
+  max-width: 610px;
+  color: #7b6577;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.claim-button-wrap { margin-top: 22px; }
+.claim-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 58px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 16px;
+  color: #fff;
+  background: linear-gradient(100deg, #ea187e, #d60b65);
+  box-shadow: 0 11px 24px rgba(224, 16, 110, .24), inset 0 1px rgba(255,255,255,.16);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: .03em;
+  transition: transform .16s ease, box-shadow .16s ease, filter .16s ease;
+}
+.claim-button::after { content: "↗"; margin-left: 11px; font-size: 20px; }
+.claim-button:hover { filter: brightness(1.06); box-shadow: 0 14px 27px rgba(224,16,110,.28); }
+.claim-button:active { transform: scale(.988); }
+.claim-button:focus-visible { outline: 3px solid #943cba; outline-offset: 4px; }
+.claim-safe {
+  margin-top: 13px;
+  text-align: center;
+  color: #967c8b;
+  font-size: 12px;
+  font-weight: 750;
+}
+.claim-safe::before {
+  content: "ⓘ";
+  display: inline-block;
+  margin-right: 6px;
+  font-size: 14px;
+  color: #e21778;
+  vertical-align: middle;
+}
+.footer {
+  margin-top: 18px;
+  text-align: center;
+  color: #9a8190;
+  font-size: 12px;
+  line-height: 1.8;
+}
+@media (max-width: 560px) {
+  .page { padding: 14px 11px 35px; }
+  .hero { border-radius: 18px; border-width: 3px; }
+  .intro { margin-top: 21px; padding: 0 3px; }
+  .eyebrow { font-size: 11px; }
+  h1 { font-size: 35px; }
+  .subtitle { font-size: 13px; }
+  .info { padding: 12px; border-radius: 19px; }
+  .row { gap: 10px; padding: 13px 11px; }
+  .label { flex-basis: 70px; font-size: 12px; }
+  .value { font-size: 13px; }
+  .claim-panel { padding: 23px 18px; border-radius: 20px; }
+  .claim-title .line1 { font-size: 35px; }
+  .claim-title .line2 { font-size: 29px; }
+  .claim-button { min-height: 54px; font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg-grid"></div>
+<div class="glow one"></div>
+<div class="glow two"></div>
+
+<main class="page">
+
+  <section class="hero">
+    <img id="hero-image" alt="">
+  </section>
+
+  <section class="intro">
+    <div class="eyebrow" id="eyebrow"></div>
+    <h1 id="title"></h1>
+    <p class="subtitle" id="subtitle"></p>
+  </section>
+
+  <section class="info">
+    <div class="row">
+      <div class="label" id="reward-label"></div>
+      <div class="value" id="reward-text"></div>
+    </div>
+    <div class="row">
+      <div class="label" id="time-label"></div>
+      <div class="value" id="time-text"></div>
+    </div>
+  </section>
+
+  <section class="claim-panel">
+    <div class="claim-tag" id="claim-tag"></div>
+
+    <div class="claim-title">
+      <span class="line1" id="claim-line1"></span>
+      <span class="line2" id="claim-line2"></span>
+    </div>
+
+    <div class="claim-desc" id="claim-desc"></div>
+
+    <div class="claim-button-wrap">
+      <a
+        id="claim-button"
+        class="claim-button"
+        href="#"
+        rel="noopener noreferrer">
+      </a>
+    </div>
+
+    <div class="claim-safe" id="claim-safe"></div>
+  </section>
+
+  <div class="footer" id="footer"></div>
+
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+
+document.title = CONFIG.pageTitle;
+
+$("hero-image").src = CONFIG.heroImage;
+$("hero-image").alt = CONFIG.heroAlt;
+
+$("eyebrow").textContent = CONFIG.eyebrow;
+$("title").textContent = CONFIG.title;
+$("subtitle").textContent = CONFIG.subtitle;
+
+$("reward-label").textContent = CONFIG.rewardLabel;
+$("reward-text").textContent = CONFIG.rewardText;
+
+$("time-label").textContent = CONFIG.timeLabel;
+$("time-text").textContent = CONFIG.timeText;
+
+
+$("claim-tag").textContent = CONFIG.claimTag;
+$("claim-line1").textContent = CONFIG.claimTitleLine1;
+$("claim-line2").textContent = CONFIG.claimTitleLine2;
+$("claim-desc").textContent = CONFIG.claimDesc;
+$("claim-button").textContent = CONFIG.claimButtonText;
+$("claim-button").href = CONFIG.lineLink;
+$("claim-safe").textContent = CONFIG.claimSafeText;
+
+$("footer").textContent = CONFIG.footerText;
+</script>
+
+</body>
+</html>
